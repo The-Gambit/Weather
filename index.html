@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./dist/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Weather App | API consumption</title>
+	</head>
+
+	<body class="flex flex-col justify-center items-center h-screen bg-sky-300">
+		<div
+			id="main-island"
+			class="bg-white opacity-80 hover:scale-105 duration-200 transition-all w-4/5 md:w-3/5 h-2/3 rounded-xl flex flex-col"
+		>
+			<div
+				class="flex flex-col-reverse lg:flex-row w-full h-full p-2 rounded-xl"
+			>
+				<div
+					id="info"
+					class="basis-1/2 flex flex-col justify-center items-center p-2"
+				>
+					<div class="text-6xl font-thin flex flex-row p-1">
+						<p id="temperature">24</p>
+						<sup class="text-lg font-semibold">o</sup>
+						<p class="text-5xl flex justify-center items-center">C</p>
+					</div>
+
+					<div  class="p-1 flex flex-row">
+						<i class="fa fa-map-marker p-1"></i>
+						<p id="location">Loading...</p>
+					</div>
+				</div>
+
+				<div
+					id="logo"
+					class="basis-1/2 flex flex-col justify-center items-center w-full"
+				>
+					<img
+						src="./sun.png"
+						alt="Sun"
+						class="w-full transition-all hover:rotate-6 mx-auto"
+					/>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+    <script src="./index.js"></script>
+</html>
